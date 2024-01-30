@@ -1,7 +1,7 @@
 /*declares pseudo-variables to be used throughout my stylesheet*/
 :root {
     --pri-colour: #c22f42;
-    --sec-colour: rgb(230,233,238);
+    --sec-colour: #e6e9ed;
     --acc-colour: #434a54;
     }
 
@@ -9,21 +9,23 @@
     background-color: var(--sec-colour);
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 100%;
+   
 }
 
 header {
     background-color: var(--acc-colour);
-    padding: 10px;
+    padding: 15px;
 
 }
 h1 {
     background-color: var(--pri-colour);
     color: var(--sec-colour);
-    border: 5px solid var(--acc-colour);
     padding: 10px; 
     display: inline-block;
-    margin-left: -10px; 
+    margin-left: -15px; 
+    font-size: 40px;
 }
 
 nav {
@@ -51,4 +53,41 @@ nav ul li {
     color: var(--sec-colour);
     background-color: var(--acc-colour);
     text-decoration: none;
+}
+
+.sub-Heading1 {
+    color: var(--pri-colour);
+    text-align: center;
+    font-size: 35px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.line1 {
+    width: 20%;
+    padding-bottom: 3px;
+    background-color: var(--pri-colour);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.line2 {
+    width: 40%;
+    padding-bottom: 3px;
+    background-color: var(--pri-colour);
+    margin: 25px auto;
+    border-radius: 2px;
+}
+
+.paragraph1{
+    display: flex;
+    flex-direction: row-reverse;
+    overflow-wrap: break-word;
+    color: var(--acc-colour);
+    width: 150%;
+
+}
+
+p {
+    text-align: right
 }
