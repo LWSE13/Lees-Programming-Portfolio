@@ -62,7 +62,7 @@ nav ul li {
     text-decoration: none;
 }
 
-.sub-Heading1 {
+.sub-Heading {
     color: var(--pri-colour);
     text-align: center;
     font-size: 35px;
@@ -89,6 +89,7 @@ nav ul li {
 /*flex makes my containers appear next to one another*/
 .abt-me {
     display: flex;
+    align-items: flex-end;
 }
 
 /*changed display to flex and flex-direction to column to make my paragraphs appear under each other*/
@@ -100,14 +101,44 @@ nav ul li {
 /*changed colour to accent-colour and added line-height*/
 .paragraph-styling {
 color: var(--acc-colour);
-line-height: 40px;
+line-height: 30px;
+margin-bottom: 20px;
 }
+
+.content-container {
+    display: flex;
+    align-items: flex-end
+}
+
 /*made my image smaller to fit website's needs. added a margin to the left and top to move image away from the edge of the page and lines. 
 rotated the image and added a box shadow*/
 .profile-pic {
+
     width: 30%;
     margin-left: 50px;
     margin-top: 40px;
     transform: rotate(100deg);
     box-shadow: 10px 10px 5px grey;
+}
+
+
+.my-work {
+    background-color: var(--pri-colour);
+}
+
+.my-work .sub-Heading {
+    color: var(--sec-colour);
+    background-color: var(--pri-colour);
+    text-align: center;
+    font-size: 35px;
+    margin-top: 240px;
+    margin-bottom: 10px;
+}
+
+.my-work .line1 {
+    background-color: var(--sec-colour);
+}
+
+.my-work .line2 {
+    background-color: var(--sec-colour);
 }
