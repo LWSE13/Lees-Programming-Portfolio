@@ -1,0 +1,54 @@
+/*declares pseudo-variables to be used throughout my stylesheet*/
+:root {
+    --pri-colour: #c22f42;
+    --sec-colour: rgb(230,233,238);
+    --acc-colour: #434a54;
+    }
+
+* {
+    background-color: var(--sec-colour);
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--acc-colour);
+    padding: 10px;
+
+}
+h1 {
+    background-color: var(--pri-colour);
+    color: var(--sec-colour);
+    border: 5px solid var(--acc-colour);
+    padding: 10px; 
+    display: inline-block;
+    margin-left: -10px; 
+}
+
+nav {
+    display: flex;
+    float: right;
+    padding-top: 25px;
+    background-color: var(--acc-colour);
+    color: var(--acc-colour);
+}
+
+nav ul{
+   display: flex;
+    list-style: none;
+    
+}
+
+nav ul li {
+    background-color: var(--acc-colour);
+    color: var(--sec-colour);
+    padding-left: 40px;
+}
+
+.nav-links
+{
+    color: var(--sec-colour);
+    background-color: var(--acc-colour);
+    text-decoration: none;
+}
