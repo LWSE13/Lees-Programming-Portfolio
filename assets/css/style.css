@@ -18,10 +18,13 @@
 
 /*set my header to have a background colour of accent colour and padding of 15px to make it larger.*/
 header {
+    display: flex;
+    justify-content: space-between;
     background-color: var(--acc-colour);
     padding: 15px;
 
 }
+
 
 /*set my h1 to have a background colour of my primary colour and a colour of my secondary colour. set padding to 10px to make it larger.
 changed my display to inline block to allow my navbar some space and have it sit right of the h1. Margin left is set at a negative value to move
@@ -33,26 +36,30 @@ h1 {
     display: inline-block;
     margin-left: -15px; 
     font-size: 40px;
+    text-align: center;
 }
 
 nav {
     display: flex;
-    float: right;
     padding-top: 25px;
     background-color: var(--acc-colour);
     color: var(--acc-colour);
 }
 
+
 nav ul{
    display: flex;
-    list-style: none;
-    
+   background-color: var(--acc-colour);
 }
+
+
 
 nav ul li {
     background-color: var(--acc-colour);
     color: var(--sec-colour);
-    padding-left: 40px;
+    list-style: none;
+    padding-right: 20px;
+    text-align: center;
 }
 
 .nav-links
@@ -62,25 +69,7 @@ nav ul li {
     text-decoration: none;
 }
 
-/*.banner-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.banner {
-    width: 100%;
-    height: 250px;
-}
-
-.banner-sub {
-    position: absolute;
-    background-color: var(--pri-colour);
-    color: var(--sec-colour);
-    padding: 3px; 
-    font-size:30px;
-}*/
 .sub-Heading {
     color: var(--pri-colour);
     text-align: center;
@@ -106,13 +95,13 @@ nav ul li {
 }
 
 /*flex makes my containers appear next to one another*/
-.abt-me {
+#abt-me {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 /*changed display to flex and flex-direction to column to make my paragraphs appear under each other*/
-.paragraphs {
+#paragraphs {
     display: flex;
     flex-direction: column;
 }
@@ -124,14 +113,9 @@ line-height: 30px;
 margin-bottom: 20px;
 }
 
-.content-container {
-    display: flex;
-    align-items: flex-end
-}
-
 /*made my image smaller to fit website's needs. added a margin to the left and top to move image away from the edge of the page and lines. 
 rotated the image and added a box shadow*/
-.profile-pic {
+#profile-pic {
 
     width: 30%;
     margin-left: 50px;
@@ -150,8 +134,8 @@ rotated the image and added a box shadow*/
     margin-top: 100px;
 }
 
-.my-work .line1,
-.my-work .line2 {
+#my-work .line1,
+#my-work .line2 {
     background-color: var(--pri-colour);
  } 
 
@@ -227,11 +211,11 @@ rotated the image and added a box shadow*/
     text-decoration: none;
  }
 
- .contact-me .line2 {
+ #contact-me .line2 {
     margin-top: 50px;
  }
 
- .contact-me .main-subheading {
+ #contact-me .main-subheading {
     margin: 50px auto;
  }
 
@@ -248,3 +232,51 @@ rotated the image and added a box shadow*/
     color: var(--pri-colour);
     font-size: large;
  }
+
+ @media (max-width: 900px) {
+    .contact-links,
+    .image-container2,
+    #abt-me {
+        flex-direction: column;
+      
+    }
+ }
+
+ @media (max-width: 900px) {
+    .link-styling {
+        margin: 0 auto 20px;
+        
+    }
+ }
+
+ @media (max-width: 900px) {
+   #profile-pic {
+    transform: rotate(90deg);
+    width: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    margin-left: 0px;
+    margin-top: 60px;
+    
+   }
+    }
+
+    @media (max-width: 900px) {
+        #abt-me {
+            box-shadow: 0px 0px 0px 0px;
+        }
+        }
+    
+    @media (max-width: 900px) {
+        .paragraph-styling {
+            margin: 100px 20px
+        }
+    }
+ 
+    @media (max-width: 900px) {
+        #responsive-header {
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+     
