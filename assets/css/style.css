@@ -213,6 +213,13 @@ part of the image is shown*/
 
  }
 
+ .image-var3:hover,
+ .prework-image-var2:hover,
+ .prework-image:hover{
+    box-shadow: 10px 5px 15px var(--pri-colour);
+    opacity: 0.7;
+ }
+
  /*adjusted image-3's positioning and font size to prevent h2 extending past it's container*/
  .image-var3 h2 {
     max-width: 92.5%;
