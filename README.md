@@ -8,6 +8,8 @@ One of the main challenges I experienced whilst creating this webpage was unders
 
 In the future I would like to switch up my design layout and colours aswell as adding new projects some of which I have a glimpse of within my wepbape...
 
+![Webpage-Preview](assets/images/webpage-preview.png)
+
 ## Installation
 N/A
 
@@ -16,7 +18,7 @@ The website can be found here!: (https://lwse13.github.io/My-Project-Portfolio/)
 
 The webpage's index.html and style.css can be opened in VS code. Alternatively, you can use any modern browser's "inspect" function to look into the code. To do this right click on a webpage and click "inspect" to open the console.
 
-![Inspect](assets/images/inspect.png)   ![Terminal](assets/images/terminal.png)
+![Inspect](assets/images/inspect.png)   ![Terminal](assets/images/terminal-preview.png)
 
 ## Credits
 N/A
