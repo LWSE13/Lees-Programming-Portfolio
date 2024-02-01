@@ -39,6 +39,8 @@ h1 {
     text-align: center;
 }
 
+/*set my display to flex allowing my nav items to sit next to each other and for responsiveness. added padding to bring my links
+further down and changed colour and background colours to suit*/
 nav {
     display: flex;
     padding-top: 25px;
@@ -46,14 +48,15 @@ nav {
     color: var(--acc-colour);
 }
 
-
+/*set my display to flex allowing my nav items to sit next to each other and for responsiveness.
+ and changed background colours to suit*/
 nav ul{
    display: flex;
    background-color: var(--acc-colour);
 }
 
 
-
+/*changed colours. spaced links with padding and alligned text. got rid of bullet styles*/
 nav ul li {
     background-color: var(--acc-colour);
     color: var(--sec-colour);
@@ -62,6 +65,7 @@ nav ul li {
     text-align: center;
 }
 
+/*changed colour of links. removed underline from links*/
 .nav-links
 {
     color: var(--sec-colour);
@@ -69,7 +73,7 @@ nav ul li {
     text-decoration: none;
 }
 
-
+/*aligned text and changed colour. spaced text using margin. changed font size*/
 .sub-Heading {
     color: var(--pri-colour);
     text-align: center;
@@ -78,6 +82,7 @@ nav ul li {
     margin-bottom: 10px;
 }
 
+/*Styling for subheadings decorative lines. Border radius gives a rounded look*/
 .line1 {
     width: 20%;
     padding-bottom: 3px;
@@ -125,7 +130,7 @@ rotated the image and added a box shadow*/
 }
 
 
-
+/*aligned text and changed colour. spaced text using margin. changed font size*/
 .main-subheading {
     color: var(--pri-colour);
     text-align: center;
@@ -134,11 +139,8 @@ rotated the image and added a box shadow*/
     margin-top: 100px;
 }
 
-#my-work .line1,
-#my-work .line2 {
-    background-color: var(--pri-colour);
- } 
-
+/*Styling for my container. Flex allows the child elements to shrink and grow according to the websites needs. justify content
+allows my image to sit in the center. margin spaces it out */
  .prework-image-container {
     display: flex;
     justify-content: center;
@@ -146,6 +148,10 @@ rotated the image and added a box shadow*/
     margin-top: 32px;
     margin-bottom: 10px;
  }
+
+ /*previously used styles with the addition of background-image and styling. Background image allows my container link to hold a 
+ background image within. background-position shows which part of the image is within view. background-size allows the entire image 
+ to cover the container*/
  .prework-image {
     display: flex; 
     align-items: center;
@@ -157,6 +163,7 @@ rotated the image and added a box shadow*/
     border: 6px solid var(--pri-colour);
  }
 
+ /*Styling and positioning for the rectangular header within my image*/
  .image-heading {
     background-color: var(--pri-colour);
     color: var(--sec-colour);
@@ -166,16 +173,14 @@ rotated the image and added a box shadow*/
     text-align: center;
  }
 
- .img-large {
-    width: 50%;
-    border: 3px solid var(--pri-colour);
-    border-radius: 5px;
- }
 
+/*this container allows my bottom 2 images to sit side by side*/
 .image-container2 {
     display: flex;
 }
 
+/*refer to prework-image for info. this time added a percentage parameter to my background-position to decide which specific 
+part of the image is shown*/
  .prework-image-var2 {
     display: flex; 
     align-items: center;
@@ -191,6 +196,8 @@ rotated the image and added a box shadow*/
 
  }
 
+ /*same as prework-image-var2 with slight adjustments to image positioning. could of combined into a class but kept individual
+ classes for future layout designs as my portfolio grows and more work is added*/
  .image-var3 {
     display: flex; 
     align-items: center;
@@ -206,11 +213,18 @@ rotated the image and added a box shadow*/
 
  }
 
+ /*adjusted image-3's positioning and font size to prevent h2 extending past it's container*/
+ .image-var3 h2 {
+    max-width: 92.5%;
+    font-size: 30px;
+ }
 
+/*removed all text decoration from links*/
  a {
     text-decoration: none;
  }
 
+/*adjusted margin bottom on contact me's line 2 to create a larger space for the heading to sit*/
  #contact-me .line2 {
     margin-top: 50px;
  }
@@ -219,12 +233,14 @@ rotated the image and added a box shadow*/
     margin: 50px auto;
  }
 
+ /*links sit 50px below subheading and 33% apart from each other space between puts them closer together*/
  .contact-links {
     display: flex;
     justify-content: space-between;
     margin: 50px  33%;
  }
 
+ /*gives links an underline and adjusts thickness to make it larger. offset links to add space between underline and links*/
  .link-styling {
     text-decoration: underline;
     text-decoration-thickness: 3px;
@@ -233,6 +249,7 @@ rotated the image and added a box shadow*/
     font-size: large;
  }
 
+ /*responsive design media queries. entire first section is set in flex column*/
  @media (max-width: 900px) {
     .contact-links,
     .image-container2,
@@ -242,6 +259,7 @@ rotated the image and added a box shadow*/
     }
  }
 
+    /*responsive design media queries. set my links to be 20px apart*/
  @media (max-width: 900px) {
     .link-styling {
         margin: 0 auto 20px;
@@ -249,6 +267,8 @@ rotated the image and added a box shadow*/
     }
  }
 
+    /*responsive design media queries. adjusted my profile pic so that it is sitting upright. removed box shadow styling 
+    and set margin to put it undeer my about me heading*/
  @media (max-width: 900px) {
    #profile-pic {
     transform: rotate(90deg);
@@ -259,13 +279,8 @@ rotated the image and added a box shadow*/
     
    }
     }
-
-    @media (max-width: 900px) {
-        #abt-me {
-            box-shadow: 0px 0px 0px 0px;
-        }
-        }
     
+    /*added margin to my paragraphs to set them apart from each other aswell as keeping them from touvhing my profile image*/
     @media (max-width: 900px) {
         .paragraph-styling {
             margin: 100px 20px
