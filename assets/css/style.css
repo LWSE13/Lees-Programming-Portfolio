@@ -272,11 +272,4 @@ rotated the image and added a box shadow*/
         }
     }
  
-    @media (max-width: 900px) {
-        #responsive-header {
-            display: flex;
-            flex-direction: column;
-        }
-        
-    }
      
