@@ -147,7 +147,7 @@ rotated the image and added a box shadow*/
     text-align: center;
     font-size: 35px;
     margin-bottom: 10px;
-    margin-top: 240px;
+    margin-top: 100px;
 }
 
 .my-work .line1,
@@ -222,11 +222,29 @@ rotated the image and added a box shadow*/
 
  }
 
- .gif {
-    background-color: var(--pri-colour);
-    width: 45px;
- }
 
  a {
     text-decoration: none;
+ }
+
+ .contact-me .line2 {
+    margin-top: 50px;
+ }
+
+ .contact-me .main-subheading {
+    margin: 50px auto;
+ }
+
+ .contact-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px  33%;
+ }
+
+ .link-styling {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+    color: var(--pri-colour);
+    font-size: large;
  }
