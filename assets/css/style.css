@@ -142,7 +142,7 @@ rotated the image and added a box shadow*/
 
 
 
-.my-work .sub-Heading {
+.main-subheading {
     color: var(--pri-colour);
     text-align: center;
     font-size: 35px;
@@ -155,19 +155,78 @@ rotated the image and added a box shadow*/
     background-color: var(--pri-colour);
  } 
 
- .prework {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('../images/study-guide.png');
+ .prework-image-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    height: 500px;
+    margin: 32px auto 10px auto;
+    margin-top: 32px;
+    margin-bottom: 10px;
+ }
+ .prework-image {
+    display: flex; 
+    align-items: center;
+    background-size: cover;
+    background-image: url('../images/study-guide.png');
+    background-position: center;
+    height: 400px;
     width: 50%;
+    border: 6px solid var(--pri-colour);
+ }
+
+ .image-heading {
+    background-color: var(--pri-colour);
+    color: var(--sec-colour);
+    padding: 10px; 
+    display: inline-block; 
+    font-size: 35px;
+    text-align: center;
  }
 
  .img-large {
     width: 50%;
     border: 3px solid var(--pri-colour);
     border-radius: 5px;
+ }
+
+.image-container2 {
+    display: flex;
+}
+
+ .prework-image-var2 {
+    display: flex; 
+    align-items: center;
+    background-size: cover;
+    background-image: url('../images/cheet-sheet.png');
+    background-position: center 8%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 47%;
+    border: 6px solid var(--pri-colour);
+
+ }
+
+ .image-var3 {
+    display: flex; 
+    align-items: center;
+    background-size: cover;
+    background-image: url('../images/game.png');
+    background-position: center 30%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 47%;
+    border: 6px solid var(--pri-colour);
+
+ }
+
+ .gif {
+    background-color: var(--pri-colour);
+    width: 45px;
+ }
+
+ a {
+    text-decoration: none;
  }
