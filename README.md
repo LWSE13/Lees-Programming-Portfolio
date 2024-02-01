@@ -14,7 +14,7 @@ In the future I would like to switch up my design layout and colours aswell as a
 N/A
 
 ## Usage
-The website can be found here!: (https://lwse13.github.io/My-Project-Portfolio/)
+The website can be found here!: (https://lwse13.github.io/Lees-Programming-Portfolio/)
 
 The webpage's index.html and style.css can be opened in VS code. Alternatively, you can use any modern browser's "inspect" function to look into the code. To do this right click on a webpage and click "inspect" to open the console.
 
